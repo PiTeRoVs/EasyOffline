@@ -1,0 +1,17 @@
+{
+    "name": "EasyOffline",
+    "short_name": "EasyOffline",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#f0c816",
+    "orientation": "any",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/src/icons/icon.png",
+        "type": "image/png",
+        "sizes": "426x426"
+      }
+    ]
+  }
