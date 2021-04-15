@@ -4,14 +4,14 @@
     "lang": "en-US",
     "start_url": "/",
     "display": "standalone",
-    "theme_color": "#f0c816",
+    "theme_color": "#ffffff",
     "orientation": "any",
     "scope": "/",
     "icons": [
       {
-        "src": "/src/icons/icon.png",
+        "src": "/src/icons/icon_512.png",
         "type": "image/png",
-        "sizes": "426x426"
+        "sizes": "512x512"
       }
     ]
   }
