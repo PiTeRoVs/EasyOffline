@@ -2,15 +2,15 @@
     "name": "EasyOffline",
     "short_name": "EasyOffline",
     "lang": "en-US",
-    "start_url": "/",
+    "start_url": "./",
     "display": "standalone",
     "theme_color": "#ffffff",
     "orientation": "any",
-    "scope": "/",
+    "scope": "./",
     "icons": [
       {
-        "src": "/src/icons/icon_512.png",
-        "type": "image/png",
+        "src": "src/icons/sample.svg",
+        "type": "image/svg+xml",
         "sizes": "512x512"
       }
     ]
