@@ -88,11 +88,15 @@ class EasyIDB{
             else{
                 let db = this.currentIDB.result;
                 let objectStore = db.transaction(tableName).objectStore(tableName);
+                let result = [];
                 objectStore.openCursor().onsuccess = function(event) {
-                    let cursor = event.target.result;                    
+                    let cursor = event.target.result;
                     if (cursor) {
-                        console.log(cursor.value);
+                        result.push(cursor.value);
                         cursor.continue();
+                    }
+                    else{
+                        resolve(result);
                     }
                 };
             }           
