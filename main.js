@@ -102,6 +102,22 @@ class EasyIDB{
             }           
         });  
     }
+    readRow(tableName, id) {
+        return new Promise((resolve, reject)=>{
+            if(!this.currentIDB){
+                reject();
+                return;
+            }
+            else{
+                let db = this.currentIDB.result;
+                let objectStore = db.transaction(tableName).objectStore(tableName).get(id);
+                objectStore.onsuccess = function(event) {
+                    resolve(event.target.result.value);
+                };
+            }           
+        });  
+    }
+
     pushValue(tableName, value, key = -1){
         return new Promise((resolve, reject)=>{
             if(!this.currentIDB){
